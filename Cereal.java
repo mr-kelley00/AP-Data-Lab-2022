@@ -4,16 +4,16 @@ public class Cereal
 {
 
     private String name; 
-    private double fiber;
-    private double cups; 
+    private double fiber0;
+    private double cups0; 
     private double FPC; 
 
     public Cereal(String cerealName, double fiber, double cups, double fiberPerCup)
 
     {
      name = cerealName;
-     fiber = fiber;
-     cups = cups;
+     fiber0 = fiber;
+     cups0 = cups;
      FPC = fiberPerCup;
 
     }
@@ -21,8 +21,8 @@ public class Cereal
     public Cereal() 
     {
         name = "";
-        fiber = 0.0;
-        cups = 0.0;
+        fiber0 = 0.0;
+        cups0 = 0.0;
         FPC = 0.0; 
 
     }
@@ -36,12 +36,12 @@ public class Cereal
 
     public double getFiber()
     {
-        return fiber; 
+        return fiber0; 
     }
 
     public double getCups()
     {
-        return cups; 
+        return cups0; 
     }
 
     public double getFPC()
@@ -53,7 +53,7 @@ public class Cereal
 
     public String toString()
     {
-        return "Cereal: " + name + "\nFiber Content: " + fiber + "\nServing Size (in cups): " + cups + "\nFiber Per Cup: " + FPC;
+        return "Cereal: " + name + "\nFiber Content: " + fiber0 + "\nServing Size (in cups): " + cups0 + "\nFiber Per Cup: " + FPC;
     }
 
 
