@@ -3,10 +3,10 @@
 public class Cereal 
 {
 
-    private String cerealName; 
+    private String name; 
     private double fiber;
     private double cups; 
-    private double fiberPerCup; 
+    private double FPC; 
 
     public Cereal(String cerealName, double fiber, double cups, double fiberPerCup)
 
@@ -53,9 +53,25 @@ public class Cereal
 
     public String toString()
     {
-        return "Cereal: " + name + "Fiber Content: " + fiber + "Serving Size (in cups): " + cups + "Fiber Per Cup: " + FPC;
+        return "Cereal: " + name + "\nFiber Content: " + fiber + "\nServing Size (in cups): " + cups + "\nFiber Per Cup: " + FPC;
     }
 
+
+    public static void main(String[] args) 
+    {
+
+        Cereal food1 = new Cereal(); 
+        System.out.println(food1.toString());
+
+        // Create three additional foods, using the data from the chart, and the constructor above. 
+        // Print them using the toString() method.  
+
+        Cereal food2 = new Cereal("Cap'n Crunch", 1.25, 0.33, 0.0);
+        System.out.println(food2.toString());
+
+
+
+    }
 
 
     
