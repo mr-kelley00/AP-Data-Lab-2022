@@ -1,4 +1,4 @@
-// Ryan Kelley, 01/10/22, AP Data Lab 2022, v0.4
+// Ryan Kelley, 01/12/22, AP Data Lab 2022, v0.5
 
 public class Cereal 
 {
@@ -47,6 +47,13 @@ public class Cereal
     public double getFPC()
     {
         return FPC; 
+    }
+
+    // toString Method 
+
+    public String toString()
+    {
+        return "Cereal: " + name + "Fiber Content: " + fiber + "Serving Size (in cups): " + cups + "Fiber Per Cup: " + FPC;
     }
 
 
